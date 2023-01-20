@@ -23,7 +23,15 @@ body {
   display: flex;
   border-radius: 10px;
   border: 1px solid black;
-  height: 25.75rem;
+  height: 70%;
+  width: 100%;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1466px) {
+  .container-app_inside {
+    font-size: 2rem;
+  }
 }
 
 *,
