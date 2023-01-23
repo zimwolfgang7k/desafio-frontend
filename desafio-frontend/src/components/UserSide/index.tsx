@@ -1,30 +1,11 @@
 import './style.css';
 import { Context } from '../../context/mainContext';
-import { SyntheticEvent, useContext, useState } from 'react';
-import api from '../../services/api';
+import { useContext } from 'react';
 
 function UserSide() {
-  const { result, setResult } = useContext(Context);
-  const [amount, setAmount] = useState('');
-  const [installments, setInstallments] = useState('');
-  const [mdr, setMdr] = useState('');
-
-  let data = {
-    amount: amount,
-    installments: installments,
-    mdr: mdr
-  };
+  const { setAmount, setInstallments, setMdr, submit } = useContext(Context);
 
   // 1 - capturar dados do formulario
-
-  const submit = (e: SyntheticEvent) => {
-    e.preventDefault();
-    api
-      .post('', data)
-      .then(res => setResult(res.data))
-      .catch(error => console.log(error));
-    console.log({ data: data, result: result });
-  };
 
   return (
     <div className="container-principal ">
