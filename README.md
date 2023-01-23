@@ -1,9 +1,9 @@
 # desafio-frontend
 
-### Instalando dependencias:
+### Instalando dependências:
 
 `yarn install`
 
-### Agora com as dependencias instaladas podemos rodar a aplicacao:
+### Agora com as dependencias instaladas podemos rodar a aplicação:
 
 `yarn dev`
