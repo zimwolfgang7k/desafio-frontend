@@ -1,0 +1,34 @@
+.container-principal-valores {
+  width: 50%;
+  background-color: rgb(208, 207, 255);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.container {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title-apiside {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .container-principal-valores {
+    font-size: 0.85rem;
+  }
+  .title-apiside {
+    font-size: 0.9rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+
+p {
+  margin: 0;
+}
