@@ -1,6 +1,6 @@
 import './style/global.css';
-import UserSide from './components/userSide';
-import ApiSide from './components/apiSide';
+import UserSide from './components/UserSide';
+import ApiSide from './components/ApiSide';
 import Provider from './context/mainContext';
 
 function App() {

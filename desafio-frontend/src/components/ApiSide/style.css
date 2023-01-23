@@ -13,8 +13,20 @@
   gap: 12px;
 }
 
-h2 {
+.title-apiside {
   margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .container-principal-valores {
+    font-size: 0.85rem;
+  }
+  .title-apiside {
+    font-size: 0.9rem;
+  }
+  .container {
+    padding: 1rem;
+  }
 }
 
 p {
